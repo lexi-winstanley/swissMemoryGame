@@ -1,4 +1,5 @@
 import React from "react";
+import FlexContainer from "./components/FlexContainer";
 import GameOptions from "./components/GameOptions";
 import Header from "./components/Header";
 import PhotoCard from "./components/PhotoCard";
@@ -13,7 +14,8 @@ class App extends React.Component {
     clicked: [],
     score: 0,
     topScore: 0,
-    wins: 0
+    wins: 0, 
+    level: "easy"
   };
 
   startGame = level => {
@@ -31,7 +33,7 @@ class App extends React.Component {
           let currentIndexValue = randomCardIndices[i];
           cardsArray.push(cards[currentIndexValue]);
         }
-        this.setState({ activeCards: cardsArray, game: "play", clicked: [], score: 0 });
+        this.setState({ activeCards: cardsArray, game: "play", clicked: [], score: 0, level: "easy" });
         console.log(cardsArray);
         console.log(randomCardIndices);
         break;
@@ -46,7 +48,7 @@ class App extends React.Component {
           let currentIndexValue = randomCardIndices[i];
           cardsArray.push(cards[currentIndexValue]);
         }
-        this.setState({ activeCards: cardsArray, game: "play", clicked: [], score: 0 });
+        this.setState({ activeCards: cardsArray, game: "play", clicked: [], score: 0, level: "medium"  });
         console.log(cardsArray);
         console.log(randomCardIndices);
         break;
@@ -61,7 +63,7 @@ class App extends React.Component {
           let currentIndexValue = randomCardIndices[i];
           cardsArray.push(cards[currentIndexValue]);
         }
-        this.setState({ activeCards: cardsArray, game: "play", clicked: [], score: 0 });
+        this.setState({ activeCards: cardsArray, game: "play", clicked: [], score: 0, level: "hard"  });
         console.log(cardsArray);
         console.log(randomCardIndices);
         break;
@@ -85,8 +87,23 @@ class App extends React.Component {
   }
 
   checkClicked = id => {
+    let currentLevel = this.state.level;
+    let goal;
+    switch (currentLevel) {
+      case "easy": 
+      goal = 7;
+      break;
+      case "medium": 
+      goal = 15;
+      break;
+      case "hard": 
+      goal = 23;
+      break;
+      default: 
+      console.log("ERROR");
+    } 
     let currentClicked = this.state.clicked;
-    if (currentClicked.includes(id) !== true && currentClicked.length < 7) {
+    if (currentClicked.includes(id) !== true && currentClicked.length < goal) {
       let currentActive = this.state.activeCards;
       console.log(currentActive);
       let shuffled = this.shuffle(currentActive);
@@ -100,7 +117,7 @@ class App extends React.Component {
         this.setState({ topScore: currentScore });
       }
       this.setState({ clicked: currentClicked, score: currentScore, activeCards : shuffled });
-    } else if (currentClicked.includes(id) !== true && currentClicked.length === 7) {
+    } else if (currentClicked.includes(id) !== true && currentClicked.length === goal) {
       let currentActive = this.state.activeCards;
       let shuffled = this.shuffle(currentActive);
       console.log(shuffled);
@@ -151,7 +168,7 @@ class App extends React.Component {
     return (
       <Wrapper>
         <Header score={this.state.score} top={this.state.topScore} />
-        {content}
+        <FlexContainer>{content}</FlexContainer>
       </Wrapper>
     );
   }
