@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/swissMemoryGame/static/css/main.c953b731.chunk.css",
-    "main.js": "/swissMemoryGame/static/js/main.9565cc30.chunk.js",
-    "main.js.map": "/swissMemoryGame/static/js/main.9565cc30.chunk.js.map",
+    "main.js": "/swissMemoryGame/static/js/main.55ad9d1f.chunk.js",
+    "main.js.map": "/swissMemoryGame/static/js/main.55ad9d1f.chunk.js.map",
     "runtime-main.js": "/swissMemoryGame/static/js/runtime-main.2dc008f5.js",
     "runtime-main.js.map": "/swissMemoryGame/static/js/runtime-main.2dc008f5.js.map",
     "static/js/2.46ec92cf.chunk.js": "/swissMemoryGame/static/js/2.46ec92cf.chunk.js",
     "static/js/2.46ec92cf.chunk.js.map": "/swissMemoryGame/static/js/2.46ec92cf.chunk.js.map",
     "index.html": "/swissMemoryGame/index.html",
-    "precache-manifest.b4d75772a6f993d8ba6d55bf390b2d1a.js": "/swissMemoryGame/precache-manifest.b4d75772a6f993d8ba6d55bf390b2d1a.js",
+    "precache-manifest.88c30fe2d3dcb883c0bb42c1ddebcb0c.js": "/swissMemoryGame/precache-manifest.88c30fe2d3dcb883c0bb42c1ddebcb0c.js",
     "service-worker.js": "/swissMemoryGame/service-worker.js",
     "static/css/main.c953b731.chunk.css.map": "/swissMemoryGame/static/css/main.c953b731.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.2dc008f5.js",
     "static/js/2.46ec92cf.chunk.js",
     "static/css/main.c953b731.chunk.css",
-    "static/js/main.9565cc30.chunk.js"
+    "static/js/main.55ad9d1f.chunk.js"
   ]
 }

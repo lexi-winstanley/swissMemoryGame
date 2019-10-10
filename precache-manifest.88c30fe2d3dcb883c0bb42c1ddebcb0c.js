@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cac4759f4cbbbff4f6397516a279c456",
+    "revision": "c049d1bef393c1bc958f8028a605d799",
     "url": "/swissMemoryGame/index.html"
   },
   {
-    "revision": "e783e61862ecba318062",
+    "revision": "b9701d766b217e526e79",
     "url": "/swissMemoryGame/static/css/main.c953b731.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/swissMemoryGame/static/js/2.46ec92cf.chunk.js"
   },
   {
-    "revision": "e783e61862ecba318062",
-    "url": "/swissMemoryGame/static/js/main.9565cc30.chunk.js"
+    "revision": "b9701d766b217e526e79",
+    "url": "/swissMemoryGame/static/js/main.55ad9d1f.chunk.js"
   },
   {
     "revision": "a84951936f4115208624",
