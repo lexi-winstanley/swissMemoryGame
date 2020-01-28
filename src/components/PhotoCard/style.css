@@ -18,3 +18,21 @@
 .caption { 
   text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+  .polaroid {
+    width: calc(33.3333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .polaroid {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .polaroid {
+    width: calc(100% - 2rem);
+  }
+}
