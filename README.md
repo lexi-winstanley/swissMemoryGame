@@ -12,7 +12,7 @@ The main functionality of this application comes from a React class component wh
 When the application loads the user is presented with a screen to pick their difficulty: easy, medium or hard. Once they select a level 8, 16 or 24 of the photos are selected at random and added to an array. The state is updated to reflect this array and the stage of the game which results in a DOM update. The chosen photos are displayed for the user to begin clicking. Each time they click, the application compares the photo's ID to those in the clicked photos array to confirm the photo has not already been clicked. If the click is not a repeat that photo's ID is added to the clicked photos array and the array is then shuffled before re-rendering. If the photo has been clicked before the user is presented with a "Game Over" screen and presented with the option to re-select difficulty and play again. If the user successfully clicks through all the photos without any repeats they are presented with a "Success" screen and the option to restart the game.
 
 ## Role
-Sole developer responsible for design, code and creation of custom graphics. Functionality requirements provided by UW Coding Bootcamp/Trilogy Education Services.
+Sole developer responsible for design, code and creation of custom graphics.
 
 ## Technologies
 React
